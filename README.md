@@ -27,6 +27,3 @@ The workflow checks the current date before initiating the deployment process. I
 
 ## Contributions
 Contributions are welcome! If you have ideas for new features or improvements, feel free to open an *issue* or submit a *pull request*.
-
-## License
-This project is licensed under the [MIT License](LICENSE).
