@@ -1,27 +1,32 @@
 # You Shall Not DEPLOY 🛑✨
 
-## Descrição
-**You Shall Not DEPLOY** é uma solução que ajuda equipes de desenvolvimento a evitar deploys em dias críticos, como sextas-feiras, finais de semana e feriados. Ao utilizar esta ferramenta, você pode garantir maior estabilidade em produção, evitando mudanças em horários propensos a problemas.
+![image](https://github.com/user-attachments/assets/b6d75c22-ad28-4ade-a120-d290421076de)
 
-## Funcionalidades
-- 🚫 Impede deploys em sextas-feiras.
-- 🚫 Bloqueia deploys durante o fim de semana.
-- 🚫 Respeita uma lista de feriados personalizáveis.
-- ✅ Fácil integração com pipelines de CI/CD utilizando GitHub Actions.
-- ✅ Flexível para adicionar comandos e etapas de deploy customizados.
+## Description
+**You Shall Not DEPLOY** is a solution designed to help development teams avoid deployments on risky days, such as Fridays, weekends, and public holidays. By using this tool, you can ensure greater production stability by preventing changes during times prone to issues.
 
-## Como Funciona
-O workflow verifica a data atual antes de iniciar o processo de deploy. Caso a data coincida com um dia bloqueado (sexta-feira, fim de semana ou feriado), o pipeline é interrompido automaticamente, evitando qualquer alteração em produção.
+## Features
+- 🚫 Blocks deployments on Fridays.
+- 🚫 Prevents deployments during weekends.
+- 🚫 Respects a customizable list of public holidays.
+- ✅ Easy integration with CI/CD pipelines using GitHub Actions.
+- ✅ Flexible setup to add custom deployment commands and steps.
 
-## Como Implementar
-1. **Criação do Workflow**: Adicione um workflow específico no seu repositório que verifica a data antes de permitir o deploy.
-2. **Script Python**: O repositório já contém um script que verifica a data e compara com os dias bloqueados.
-3. **Customização do Deploy**: Configure os passos de deploy de acordo com suas necessidades.
+## How It Works
+The workflow checks the current date before initiating the deployment process. If the date falls on a blocked day (Friday, weekend, or a specified holiday), the pipeline is automatically halted, preventing any changes from being pushed to production.
 
-## Benefícios
-- 🔒 **Segurança**: Reduz o risco de problemas em produção ao evitar deploys em dias críticos.
-- ⚙️ **Automação**: Integração simples com GitHub Actions para automatizar verificações de deploy.
-- 📅 **Flexibilidade**: Permite adicionar novos feriados ou ajustes conforme necessário.
+## How to Implement
+1. **Create the Workflow**: Add a specific workflow to your repository that checks the date before allowing deployments.
+2. **Python Script**: The repository includes a script that verifies the date against the blocked days.
+3. **Customize Your Deployment**: Adjust the deployment steps according to your project's requirements.
 
-## Contribuições
-Contribuições são sempre bem-vindas! Se você tiver ideias para novas funcionalidades ou melhorias, sinta-se à vontade para abrir uma *issue* ou enviar um *pull request*. 
+## Benefits
+- 🔒 **Security**: Reduces the risk of production issues by blocking deployments on critical days.
+- ⚙️ **Automation**: Simple integration with GitHub Actions to automate deployment checks.
+- 📅 **Flexibility**: Easily customize the list of holidays and blocked days as needed.
+
+## Contributions
+Contributions are welcome! If you have ideas for new features or improvements, feel free to open an *issue* or submit a *pull request*.
+
+## License
+This project is licensed under the [MIT License](LICENSE).
