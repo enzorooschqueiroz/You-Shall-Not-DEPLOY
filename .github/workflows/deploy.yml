@@ -22,8 +22,17 @@ jobs:
         run: |
           python check_deploy_date.py
 
-  deploy:
+   deploy:
+    # Este job depende da verificação de data ser bem-sucedida
+    needs: check_deploy_date
+    runs-on: ubuntu-latest
+    steps:
+      - name: Code checkout
+        uses: actions/checkout@v3
 
-    needs : check_deploy_date
+      # Etapas personalizáveis para deploy
+      # Substitua pelos seus próprios comandos de deploy
+      - name: Configure seu deploy aqui
+        run: |
 
   
